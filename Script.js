@@ -13,7 +13,6 @@ function obtemValorAproximado(valorProcurado) {
     ];
   
     let valorMaisProximo = null; 
-  //Por mais que seja apenas uma página de código, optei por usar LET no lugar de VAR para manter os costumes
     for (let i = 0; i < arrayParcelas.length; i++) {
       const valorAtual = parseFloat(arrayParcelas[i].valor);
   
@@ -30,7 +29,7 @@ function obtemValorAproximado(valorProcurado) {
     };
   }
   
-  const valorProcurado = 1000.00; //Inserir aqui o valor a ser procurado!
+  const valorProcurado = 300.99; //Inserir aqui o valor a ser procurado!
   const resultado = obtemValorAproximado(valorProcurado);
   
   console.log(`Valor procurado: R$${valorProcurado.toFixed(2)}`);
